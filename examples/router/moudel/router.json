@@ -1,0 +1,23 @@
+{
+  "zh-CN":[
+    {
+      "path":"/",
+      "redirect": "/home"
+    },
+    {
+      "path":"/home",
+      "name":"home",
+      "children":[]
+    },
+    {
+      "path":"/views",
+      "name":"views",
+      "children":[
+        {
+          "path":"template",
+          "name":"template"
+        }
+      ]
+    }
+  ]
+}
