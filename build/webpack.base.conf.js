@@ -7,9 +7,13 @@ const vueLoaderConfig = require('./vue-loader.conf')
 //下面两个配置是为了vue-markdown-loader和Markdown-it-container配置的信息options信息
 const MarkdownItContainer = require('markdown-it-container')
 const striptags = require('./strip-tags')
+/**
+ * 2019-2-24新增
+ */
+var Ex = require('extract-text-webpack-plugin') //css分离打包
 
 
-function resolve (dir) {
+function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
@@ -68,18 +72,18 @@ const vueMarkdown = {
 
     // ```code`` 给这种样式加个class code_inline
     const code_inline = MarkdownIt.renderer.rules.code_inline
-    MarkdownIt.renderer.rules.code_inline = function(...args){
+    MarkdownIt.renderer.rules.code_inline = function (...args) {
       args[0][args[1]].attrJoin('class', 'code_inline')
       return code_inline(...args)
     }
     return source
   },
   use: [
-    [ MarkdownItContainer, 'demo', {
+    [MarkdownItContainer, 'demo', {
       // 用于校验包含demo的代码块
       validate: params => params.trim().match(/^demo\s*(.*)$/),
-      render: function(tokens, idx) {
-        
+      render: function (tokens, idx) {
+
         var m = tokens[idx].info.trim().match(/^demo\s*(.*)$/);
 
         if (tokens[idx].nesting === 1) {
@@ -107,9 +111,9 @@ module.exports = {
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
-    publicPath: process.env.NODE_ENV === 'production'
-      ? config.build.assetsPublicPath
-      : config.dev.assetsPublicPath
+    publicPath: process.env.NODE_ENV === 'production' ?
+      config.build.assetsPublicPath :
+      config.dev.assetsPublicPath
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
@@ -120,7 +124,8 @@ module.exports = {
   },
   module: {
     rules: [
-      ...(config.dev.useEslint ? [createLintingRule()] : []),
+      // ...(config.dev.useEslint ? [createLintingRule()] : []),
+      ...(config.dev.useEslint ? [] : []),
       {
         test: /\.vue$/,
         loader: 'vue-loader',
@@ -162,6 +167,16 @@ module.exports = {
         test: /\.md$/,
         loader: 'vue-markdown-loader',
         options: vueMarkdown
+      },
+      /**
+       * 2019-2-24新增的css分离打包
+       */
+      {
+        test: /\.css$/,
+        loader: Ex.extract({
+          fallback: 'style-loader',
+          use: "css-loader"
+        })
       }
     ]
   },

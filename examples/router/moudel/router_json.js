@@ -3,7 +3,6 @@ let packgageJson = pathJson
 const routerInfo = []
 for (let key in packgageJson) {
   if (key === 'zh-CN') {
-    debugger
     if (packgageJson[key].length > 0) {
       packgageJson[key].forEach(element => {
         element.component = r => require.ensure([], () => r(require(`../../views/${element.name}.vue`)))
@@ -20,5 +19,4 @@ for (let key in packgageJson) {
     }
   }
 }
-debugger
 export default routerInfo

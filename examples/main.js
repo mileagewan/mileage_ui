@@ -3,10 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import $ from 'jquery'
 import demoBlock from './components/demo-block'
 Vue.component('demo-block', demoBlock)
 Vue.config.productionTip = false
-
+Vue.prototype.$ = $
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
