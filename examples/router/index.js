@@ -3,7 +3,6 @@ import Router from 'vue-router'
 // import demo from '../components/demo-block'
 import routerJson from './moudel/router_json'
 Vue.use(Router)
-
 export default new Router({
   // routes: [{
   //   path: '/',

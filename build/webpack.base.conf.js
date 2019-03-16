@@ -108,6 +108,21 @@ module.exports = {
   entry: {
     app: './examples/main.js'
   },
+
+  /**
+   * 3-16d增加的
+   */
+  externals: {//不打包的
+    'vue': 'Vue',
+    'vue-router': 'VueRouter',
+    //'vuex': 'Vuex',
+    'axios': 'axios',
+    'echarts': 'echarts',
+    'jquery': 'jQuery'
+  },
+
+
+
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',

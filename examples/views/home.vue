@@ -1,12 +1,13 @@
 <template>
   <div>
-    12123123
-    {{headerName}}
+    <navigator />
     <router-view></router-view>
   </div>
 </template>
 <script>
+import navigator from './homeComp/navigator'
 export default {
+  components:{navigator},
   data() {
     return {
       headerName: null

@@ -1,0 +1,76 @@
+body,
+div,
+span,
+p,
+a,
+img,
+input,
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+strong,
+em,
+i,
+del {
+	margin: 0;
+	padding: 0;
+	/* 清除标签的内外边距 */
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	/* 清除a标签的默认样式 */
+}
+
+input {
+	border: 0 none;
+	outline: 0 none;
+	/* 清除input的边框以及外轮廓线 */
+}
+
+img {
+	border: 0 none;
+	/* 在低版本的浏览器中,img是自带边框的 */
+	vertical-align: middle;
+	/* 图片与文字中线对齐 */
+}
+
+li {
+	list-style: none;
+	/* 清除li标签自带的小点点 */
+}
+
+h1,
+h2,
+h3,
+h4,
+strong {
+	font-weight: normal;
+}
+
+em,
+i {
+	font-style: normal;
+}
+
+body {
+	background-color: #fff;
+	font: 12px/100% "微软雅黑";
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	*zoom: 1;
+}
