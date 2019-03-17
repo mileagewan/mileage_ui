@@ -11,7 +11,10 @@
             v-for="(item,index) in navigator"
             :key='index'
             class='list'
-          >{{item.name}}</li>
+          >
+          <router-link :to="item.router" v-if="item.router.indexOf('http') === -1">{{item.name}}</router-link>
+          <a v-else :href="item.router">{{item.name}}</a>
+          </li>
           <li class="list selectElement">
             版本:
             <select
@@ -37,12 +40,16 @@ export default {
     return {
       navigator: [
         {
+          name:'更新日志',
+          router:'/updata'
+        },
+        {
           name: "协同开发",
           router: "https://github.com/mileagewan/mileage_ui"
         },
         {
           name: "组件",
-          router: ""
+          router: "/views"
         }
       ],
       select: [{ version: "1.0.0" }, { version: "1.1.0" }]

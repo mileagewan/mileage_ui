@@ -10,6 +10,11 @@
       "children":[]
     },
     {
+      "path":"/updata",
+      "name":"updata",
+      "children":[]
+    },
+    {
       "path":"/views",
       "name":"views",
       "children":[
