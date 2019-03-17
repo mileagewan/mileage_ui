@@ -35,8 +35,7 @@
     }
   };
 </script>
-
-<style lang="less" type="text/less">
+<style lang="scss" type="text/less" scoped>
 
   .demo-container {
     transition: max-height .3s ease;

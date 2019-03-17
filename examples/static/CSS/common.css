@@ -59,8 +59,10 @@ i {
 }
 
 body {
-	background-color: #fff;
+	background-color: #f6f6f6;
 	font: 12px/100% "微软雅黑";
+	padding: 0;
+	margin-top: 0;
 }
 
 .clearfix:after {

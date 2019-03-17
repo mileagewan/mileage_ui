@@ -1,13 +1,15 @@
 <template>
-  <div>
+  <div :style="{width:'100%'}">
     <navigator />
+    <message />
     <router-view></router-view>
   </div>
 </template>
 <script>
 import navigator from './homeComp/navigator'
+import message from './homeComp/message'
 export default {
-  components:{navigator},
+  components:{navigator,message},
   data() {
     return {
       headerName: null
