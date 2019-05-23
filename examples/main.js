@@ -5,6 +5,8 @@ import App from './App'
 import router from './router'
 import $ from 'jquery'
 import demoBlock from './components/demo-block'
+// 动态全局注册组件
+import './components/global'
 Vue.component('demo-block', demoBlock)
 Vue.config.productionTip = false
 Vue.prototype.$ = $

@@ -3,7 +3,7 @@
     <div class="navigation">
       <h1>
         <div class="logo"></div>
-        <div>Mileage-UI</div>
+        <div @click="$router.push({name:'home'})">Mileage-UI</div>
       </h1>
       <div class="right">
         <ul>

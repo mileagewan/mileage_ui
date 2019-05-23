@@ -17,5 +17,11 @@ export default new Router({
   //   component: r => require.ensure([], () => r(require('../docs/template.md')))
   // }
   // ]
-  routes: routerJson
+  routes: routerJson.concat([
+    {
+      path: '/gojs',
+      name: 'gojs',
+      component: r => require.ensure([], () => r(require('@/components/GOJS/go-js.vue')))
+    }
+  ])
 })
