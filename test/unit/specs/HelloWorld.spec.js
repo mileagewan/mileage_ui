@@ -1,11 +1,12 @@
 import Vue from 'vue'
-import HelloWorld from '@/components/HelloWorld'
+import views from '@/views/views'
 
-describe('HelloWorld.vue', () => {
+describe('views.vue', () => {
   it('should render correct contents', () => {
-    const Constructor = Vue.extend(HelloWorld)
+    const Constructor = Vue.extend(views)
     const vm = new Constructor().$mount()
-    expect(vm.$el.querySelector('.hello h1').textContent)
-      .toEqual('Welcome to Your Vue.js App')
+    expect(vm.$el.querySelector('.router').textContent.trim()).toEqual(
+      '组件列表'
+    )
   })
 })

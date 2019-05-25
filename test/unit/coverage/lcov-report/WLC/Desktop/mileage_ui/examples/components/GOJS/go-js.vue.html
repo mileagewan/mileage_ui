@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for WLC/Desktop/mileage_ui/examples/components/GOJS/go-js.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\..\..\..\index.html">All files</a> / <a href="index.html">WLC/Desktop/mileage_ui/examples/components/GOJS</a> go-js.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/30</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/30</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+  &lt;div
+    id="test"
+    style="width:600px;height:600px"
+  &gt;
+&nbsp;
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+<span class="cstat-no" title="statement not covered" >import go from "gojs";</span>
+export default {
+<span class="fstat-no" title="function not covered" >  data() {</span>
+<span class="cstat-no" title="statement not covered" >    return {};</span>
+  },
+<span class="fstat-no" title="function not covered" >  created() {},</span>
+<span class="fstat-no" title="function not covered" >  mounted() {</span>
+<span class="cstat-no" title="statement not covered" >    this.init();</span>
+  },
+  methods: {
+<span class="fstat-no" title="function not covered" >    init() {</span>
+<span class="cstat-no" title="statement not covered" >      let $ = go.GraphObject.make;</span>
+<span class="cstat-no" title="statement not covered" >      let myDiagram = $(go.Diagram, "test", {</span>
+        initialContentAlignment: go.Spot.Center,
+        "undoManager.isEnabled": true,
+        allowZoom: true,
+        "toolManager.mouseWheelBehavior": go.ToolManager.WheelZoom,
+        "clickCreatingTool.archetypeNodeData": { text: "Node" },
+        // "commandHandler.copiesTree": true,
+        // "commandHandler.deletesTree": true,
+        // "draggingTool.dragsTree": true
+      });
+<span class="cstat-no" title="statement not covered" >      myDiagram.nodeTemplate = $(</span>
+        go.Node,
+        "Auto",
+        {background: '#ccc'},
+        new go.Binding("location", "loc", go.Point.parse).makeTwoWay(
+          go.Point.stringify
+        ),
+        // define the node's outer shape, which will surround the TextBlock
+        $(go.Shape, "RoundedRectangle", {
+          parameter1: 20, // the corner has a large radius
+          fill: $(go.Brush, "Linear", {
+            0: "rgb(254, 201, 0)",
+            1: "rgb(254, 162, 0)"
+          }),
+          stroke: null,
+          portId: "", // this Shape is the Node's port, not the whole Node
+          fromLinkable: true,
+          fromLinkableSelfNode: true,
+          fromLinkableDuplicates: true,
+          toLinkable: true,
+          toLinkableSelfNode: true,
+          toLinkableDuplicates: true,
+          cursor: "pointer"
+        }),
+        $(
+          go.TextBlock,
+          {
+            font: "bold 11pt helvetica, bold arial, sans-serif",
+            editable: true // editing the text automatically updates the model data
+          },
+          new go.Binding("text").makeTwoWay()
+        )
+      );
+<span class="cstat-no" title="statement not covered" >      myDiagram.nodeTemplate.selectionAdornmentTemplate = $(</span>
+        go.Adornment,
+        "Spot",
+        $(
+          go.Panel,
+          "Auto",
+          $(go.Shape, { fill: null, stroke: "red", strokeWidth: 2 }),
+          $(go.Placeholder) // a Placeholder sizes itself to the selected Node
+        ),
+        // the button to create a "next" node, at the top-right corner
+        $(
+          "Button",
+          {
+            alignment: go.Spot.TopRight,
+            click: addNodeAndLink // this function is defined below
+          },
+          $(go.Shape, "PlusLine", { width: 6, height: 6 })
+        ) // end button
+      ); // end Adornment
+<span class="fstat-no" title="function not covered" >      function addNodeAndLink(e, obj) {</span>
+<span class="cstat-no" title="statement not covered" >        var adornment = obj.part;</span>
+<span class="cstat-no" title="statement not covered" >        var diagram = e.diagram;</span>
+<span class="cstat-no" title="statement not covered" >        diagram.startTransaction("Add State");</span>
+&nbsp;
+        // get the node data for which the user clicked the button
+<span class="cstat-no" title="statement not covered" >        var fromNode = adornment.adornedPart;</span>
+<span class="cstat-no" title="statement not covered" >        var fromData = fromNode.data;</span>
+        // create a new "State" data object, positioned off to the right of the adorned Node
+<span class="cstat-no" title="statement not covered" >        var toData = { text: "new" };</span>
+<span class="cstat-no" title="statement not covered" >        var p = fromNode.location.copy();</span>
+<span class="cstat-no" title="statement not covered" >        p.x += 200;</span>
+<span class="cstat-no" title="statement not covered" >        toData.loc = go.Point.stringify(p); // the "loc" property is a string, not a Point object</span>
+        // add the new node data to the model
+<span class="cstat-no" title="statement not covered" >        var model = diagram.model;</span>
+<span class="cstat-no" title="statement not covered" >        model.addNodeData(toData);</span>
+&nbsp;
+        // create a link data from the old node data to the new node data
+<span class="cstat-no" title="statement not covered" >        var linkdata = {</span>
+          from: model.getKeyForNodeData(fromData), // or just: fromData.id
+          to: model.getKeyForNodeData(toData),
+          text: "transition"
+        };
+        // and add the link data to the model
+<span class="cstat-no" title="statement not covered" >        model.addLinkData(linkdata);</span>
+&nbsp;
+        // select the new Node
+<span class="cstat-no" title="statement not covered" >        var newnode = diagram.findNodeForData(toData);</span>
+<span class="cstat-no" title="statement not covered" >        diagram.select(newnode);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        diagram.commitTransaction("Add State");</span>
+&nbsp;
+        // if the new node is off-screen, scroll the diagram to show the new node
+<span class="cstat-no" title="statement not covered" >        diagram.scrollToRect(newnode.actualBounds);</span>
+      }
+<span class="cstat-no" title="statement not covered" >      myDiagram.linkTemplate = $(</span>
+        go.Link, // the whole link panel
+        {
+          curve: go.Link.Bezier,
+          adjusting: go.Link.Stretch,
+          reshapable: true,
+          relinkableFrom: true,
+          relinkableTo: true,
+          toShortLength: 3
+        },
+        new go.Binding("points").makeTwoWay(),
+        new go.Binding("curviness"),
+        $(
+          go.Shape, // the link shape
+          { strokeWidth: 1.5 }
+        ),
+        $(
+          go.Shape, // the arrowhead
+          { toArrow: "standard", stroke: null }
+        ),
+        $(
+          go.Panel,
+          "Auto",
+          $(
+            go.Shape, // the label background, which becomes transparent around the edges
+            {
+              fill: $(go.Brush, "Radial", {
+                0: "rgb(255, 255, 255)",
+                0.3: "rgb(255, 255, 255)",
+                1: "rgba(255, 255, 255, 0)"
+              }),
+              stroke: null
+            }
+          ),
+          $(
+            go.TextBlock,
+            "transition", // the label text
+            {
+              textAlign: "center",
+              font: "9pt helvetica, arial, sans-serif",
+              margin: 4,
+              editable: true // enable in-place editing
+            },
+            // editing the text automatically updates the model data
+            new go.Binding("text").makeTwoWay()
+          )
+        )
+      );
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      let myModel = $(go.GraphLinksModel);</span>
+<span class="cstat-no" title="statement not covered" >      myModel.nodeKeyProperty = "id";</span>
+<span class="cstat-no" title="statement not covered" >      myModel.nodeDataArray = [</span>
+        { id: 0, loc: "120 120", text: "Initial" },
+        { id: 1, loc: "330 120", text: "First down" },
+        { id: 2, loc: "226 376", text: "First up" },
+        { id: 3, loc: "60 276", text: "Second down" },
+        { id: 4, loc: "226 226", text: "Wait" }
+      ];
+<span class="cstat-no" title="statement not covered" >      myModel.linkDataArray = [</span>
+        { from: 0, to: 0, text: "up or timer", curviness: -20 },
+        { from: 0, to: 1, text: "down", curviness: 20 },
+        { from: 1, to: 0, text: "up (moved)\nPOST", curviness: 20 },
+        { from: 1, to: 1, text: "down", curviness: -20 },
+        { from: 1, to: 2, text: "up (no move)" },
+        { from: 1, to: 4, text: "timer" },
+        { from: 2, to: 0, text: "timer\nPOST" },
+        { from: 2, to: 3, text: "down" },
+        { from: 3, to: 0, text: "up\nPOST\n(dblclick\nif no move)" },
+        { from: 3, to: 3, text: "down or timer", curviness: 20 },
+        { from: 4, to: 0, text: "up\nPOST" },
+        { from: 4, to: 4, text: "down" }
+      ];
+<span class="cstat-no" title="statement not covered" >      myDiagram.model = myModel;</span>
+    }
+  }
+};
+&lt;/script&gt;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat May 25 2019 22:24:57 GMT+0800 (中国标准时间)
+</div>
+</div>
+<script src="..\..\..\..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\..\..\..\sorter.js"></script>
+</body>
+</html>
