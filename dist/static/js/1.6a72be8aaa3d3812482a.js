@@ -1,0 +1,2 @@
+webpackJsonp([1],{"8u+Y":function(e,u,n){var o={"./List/listBasic.vue":"VJS2","./List/listViews.vue":"F83C","./home.vue":"l6Ka","./homeComp/message.vue":"NUXQ","./homeComp/navigator.vue":"zuvn","./updata.vue":"jV38","./views.vue":"ziHe"};function t(e){return n(i(e))}function i(e){var u=o[e];if(!(u+1))throw new Error("Cannot find module '"+e+"'.");return u}t.keys=function(){return Object.keys(o)},t.resolve=i,e.exports=t,t.id="8u+Y"}});
+//# sourceMappingURL=1.6a72be8aaa3d3812482a.js.map
