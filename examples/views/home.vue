@@ -9,28 +9,28 @@
 import navigator from './homeComp/navigator'
 import message from './homeComp/message'
 export default {
-  components:{navigator,message},
-  data() {
+  components: { navigator, message },
+  data () {
     return {
       headerName: null
     }
   },
-  mounted() {
+  mounted () {
     this.getMessage()
   },
   methods: {
-    getMessage() {
+    getMessage () {
       const $this = this
       this.$.ajax({
-        url:'/api',
-        data:{},
-        success:(res) => {
-          if(res) {
+        url: '/api',
+        data: {},
+        success: (res) => {
+          if (res) {
             $this.headerName = res.name
           }
         }
-      });
+      })
     }
-  },
+  }
 }
 </script>

@@ -1,30 +1,38 @@
-<template>
+<template style='height:100%;width:100%'>
   <div>
-    <div class="router" style="fontSize:30px;paddingTop:50px">
-      组件列表
+    <navigator />
+    <div class="router"
+         style="fontSize:30px;paddingTop:50px">
+      <list-views />
     </div>
-    <div class="main" style="fontSize:30px;paddingTop:50px">
-      组件正在开发中，敬请期待！
-      <router-view></router-view>
+    <div class="main"
+         style="paddingTop:50px">
+      <router-view style='width:90%;height:100%;'></router-view>
     </div>
   </div>
 </template>
 <script>
-export default {}
+export default {
+  created () {
+  }
+}
 </script>
 
-<style lang="less">
-  .router {
-    width: 200px;
-    height: 200px;
-    overflow: auto;
-    float: left;
-    background-color: skyblue;
-  }
-  .main {
-    float: left;
-    width: 100%-240px;
-    height: 1000px;
-    overflow: auto;
-  }
+<style>
+.router {
+  width: 200px;
+  height: 100%;
+  overflow: auto;
+  float: left;
+  background-color: #fefefe;
+  border-right: solid 2px #9acd32;
+}
+.main {
+  float: right;
+  box-sizing: border-box;
+  width: calc(100% - 240px) !important;
+  height: 100%;
+  overflow: auto;
+  font-size: 16px;
+}
 </style>

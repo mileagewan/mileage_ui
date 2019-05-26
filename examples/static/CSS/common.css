@@ -16,33 +16,33 @@ strong,
 em,
 i,
 del {
-	margin: 0;
-	padding: 0;
-	/* 清除标签的内外边距 */
+  margin: 0;
+  padding: 0;
+  /* 清除标签的内外边距 */
 }
 
 a {
-	text-decoration: none;
-	color: #000;
-	/* 清除a标签的默认样式 */
+  text-decoration: none;
+  color: #000;
+  /* 清除a标签的默认样式 */
 }
 
 input {
-	border: 0 none;
-	outline: 0 none;
-	/* 清除input的边框以及外轮廓线 */
+  border: 0 none;
+  outline: 0 none;
+  /* 清除input的边框以及外轮廓线 */
 }
 
 img {
-	border: 0 none;
-	/* 在低版本的浏览器中,img是自带边框的 */
-	vertical-align: middle;
-	/* 图片与文字中线对齐 */
+  border: 0 none;
+  /* 在低版本的浏览器中,img是自带边框的 */
+  vertical-align: middle;
+  /* 图片与文字中线对齐 */
 }
 
 li {
-	list-style: none;
-	/* 清除li标签自带的小点点 */
+  list-style: none;
+  /* 清除li标签自带的小点点 */
 }
 
 h1,
@@ -50,29 +50,56 @@ h2,
 h3,
 h4,
 strong {
-	font-weight: normal;
+  font-weight: normal;
 }
 
 em,
 i {
-	font-style: normal;
+  font-style: normal;
 }
 
 body {
-	background-color: #f6f6f6;
-	font: 12px/100% "微软雅黑";
-	padding: 0;
-	margin-top: 0;
+  background-color: #f6f6f6;
+  font: 12px/100% "微软雅黑";
+  padding: 0;
+  margin-top: 0;
 }
 
 .clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	height: 0;
-	visibility: hidden;
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
 }
 
 .clearfix {
-	*zoom: 1;
+  *zoom: 1;
+}
+
+table {
+  width: 700px;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  width: 20%;
+  font-size: 18px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: solid 1px #000;
+}
+
+table td {
+  text-align: left;
+}
+
+p {
+  line-height: 18px;
+}
+
+h3 {
+  font-weight: 700;
 }

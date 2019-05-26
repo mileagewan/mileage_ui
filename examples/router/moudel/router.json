@@ -1,26 +1,32 @@
 {
-  "zh-CN":[
-    {
-      "path":"/",
+  "zh-CN": [{
+      "path": "/",
       "redirect": "/home"
     },
     {
-      "path":"/home",
-      "name":"home",
-      "children":[]
+      "path": "/home",
+      "name": "home",
+      "children": []
     },
     {
-      "path":"/updata",
-      "name":"updata",
-      "children":[]
+      "path": "/updata",
+      "name": "updata",
+      "children": []
     },
     {
-      "path":"/views",
-      "name":"views",
-      "children":[
+      "path": "/views",
+      "redirect": "/views/buttonSetTime"
+    },
+    {
+      "path": "/views",
+      "name": "views",
+      "children": [{
+          "path": "template",
+          "name": "template"
+        },
         {
-          "path":"template",
-          "name":"template"
+          "path": "buttonSetTime",
+          "name": "buttonSetTime"
         }
       ]
     }
